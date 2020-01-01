@@ -47,36 +47,51 @@ Ubuntu에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 ### OpenJDK 
 * OpenJDK 8 버전으로 설치 : `sudo apt-get install -y openjdk-8-jdk`
 
-### JetBrain 
-* 설치 : `sudo apt-get install -y jetbrains-toolbox`
-
 ### Docker
-* 설치 : `apt-get install -y docker`
-
-### Visual Studio Code
-* wget을 이용한 설치 
-  - `wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -`
-  - `sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"`
-  - `sudo apt-get update; sudo apt-get install -y code`
-* 참고 사이트 : [링크](https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/)
-
-### GitHub Desktop 
-* 설명 : 앱으로 Github 관리 
-* 설치 : `scoop install github`
-
-### Slack
-* 설명 : 사내 메신져
-* 설치 : `scoop install slack`
+* 설치 : `sudo apt-get install -y docker`
 
 ### ADB
 * 설명 : android platform tools
-* 설치 : `scoop install adb`
+* 설치 : `sudo apt-get install -y android-tools-adb android-tools-fastboot`
+* 참고 사이트 : [링크](https://linuxtechlab.com/install-adb-fastboot-ubuntu/)
+
+### htop
+* 설명 : 기본 탑재된 top 보다 좀 더 Visual 한 버전의 프로세스 보기
+* 설치 : `apt-get install -y htop`
 
 ### tomcat
-* 설치 : `scoop install tomcat`
+* 설치 : `apt-get install -y tomcat9`
 
-### telnet
-* 설치 : `scoop install telnet`
+## snap
+* 설명 : GUI 패키지 설치 관리자
+* 설치 : `sudo apt-get install -y snapd`
 
-### KaKaoTalk
-* 설치 : `scoop install kakaotalk`
+### snap 사용법
+* 패키지(응용프로그램) 찾기 
+  - `snap search [찾을 패키지 명]`
+  - `snap find "키워드"`
+* 패키지 설치 : `sudo snap install [패키지 명]`
+* 패키지 삭제 : `sudo snap remove [패키지 명]`
+* 설치된 패키지 목록보기 : `snap list`
+* 패키지 업데이트 
+  - 특정 패키지 `snap refresh [패키지 명]`
+  - 모두 : `sudo snap refresh` 
+
+### JetBrain
+* Intellij IDEA
+  - Community : `sudo snap install intellij-idea-community --classic`
+  - Ultimate : `sudo snap install intellij-idea-ultimate --classic`
+* datagrip : `sudo snap install datagrip --classic`
+* clion : `sudo snap install clion --classic`
+* webstorm : `sudo snap install webstorm --classic`
+
+### Visual Studio Code
+* 설치 : `sudo snap install code --classic`
+
+### GitHub Desktop 
+* 설명 : 앱으로 Github 관리 
+* 설치 : `sudo snap install github-desktop --beta --classic`
+
+### Slack
+* 설명 : 사내 메신져
+* 설치 : `sudo snap install slack`
