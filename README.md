@@ -70,28 +70,28 @@ Ubuntu에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 * 패키지(응용프로그램) 찾기 
   - `snap search [찾을 패키지 명]`
   - `snap find "키워드"`
-* 패키지 설치 : `sudo snap install [패키지 명]`
-* 패키지 삭제 : `sudo snap remove [패키지 명]`
+* 패키지 설치 : `snap install [패키지 명]`
+* 패키지 삭제 : `snap remove [패키지 명]`
 * 설치된 패키지 목록보기 : `snap list`
 * 패키지 업데이트 
   - 특정 패키지 `snap refresh [패키지 명]`
-  - 모두 : `sudo snap refresh` 
+  - 모두 : `snap refresh` 
 
 ### JetBrain
 * Intellij IDEA
-  - Community : `sudo snap install intellij-idea-community --classic`
-  - Ultimate : `sudo snap install intellij-idea-ultimate --classic`
-* datagrip : `sudo snap install datagrip --classic`
-* clion : `sudo snap install clion --classic`
-* webstorm : `sudo snap install webstorm --classic`
+  - Community : `snap install intellij-idea-community --classic`
+  - Ultimate : `snap install intellij-idea-ultimate --classic`
+* datagrip : `snap install datagrip --classic`
+* clion : `snap install clion --classic`
+* webstorm : `snap install webstorm --classic`
 
 ### Visual Studio Code
-* 설치 : `sudo snap install code --classic`
+* 설치 : `snap install code --classic`
 
 ### GitHub Desktop 
 * 설명 : 앱으로 Github 관리 
-* 설치 : `sudo snap install github-desktop --beta --classic`
+* 설치 : `snap install github-desktop --beta --classic`
 
 ### Slack
 * 설명 : 사내 메신져
-* 설치 : `sudo snap install slack`
+* 설치 : `snap install slack`
