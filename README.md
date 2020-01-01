@@ -59,6 +59,11 @@ Ubuntu에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 * 설명 : 기본 탑재된 top 보다 좀 더 Visual 한 버전의 프로세스 보기
 * 설치 : `apt-get install -y htop`
 
+### traceroute
+* 설명 : 서버 접속 가능 및 경로 파악
+* 설치 : `sudo apt-get install -y traceroute`
+* 사용법 : `traceroute -p [포트] [서버 IP] -T`
+
 ### tomcat
 * 설치 : `apt-get install -y tomcat9`
 
@@ -87,6 +92,14 @@ Ubuntu에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
 ### Visual Studio Code
 * 설치 : `snap install code --classic`
+
+### ngrok
+* 설명 : 외부망에서 tcp 접속할 수 있도록 지정 포트를 ngrok에서 제공해주는 도메인 및 포트에 바인딩해준다.
+* 공식 사이트 : [링크](https://ngrok.com)
+* 주의 : 회원가입 필요(무료)
+* 설치 : `snap install ngrok`
+* 사용법 : `ngrok tcp [지정 포트]`
+* 예시 : `ngrok tcp 4321`
 
 ### GitHub Desktop 
 * 설명 : 앱으로 Github 관리 
