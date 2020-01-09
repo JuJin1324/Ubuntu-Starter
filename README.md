@@ -5,6 +5,14 @@ Ubuntu에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 * 설치 : `sudo apt-get install -y open-vm-tools-desktop`
 * 참고 사이트 : [링크](https://kkn1220.tistory.com/109)
 
+## Native Ubuntu 사용 시에 apt-get 안되는 문제
+이미 떠 있는 apt 프로세스를 모두 종료시킨다.
+* 프로세스 확인 : `ps aux | grep -i apt`
+* 
+
+### 참조 사이트
+[How to Fix ‘E: Could not get lock /var/lib/dpkg/lock’ Error in Ubuntu Linux](https://itsfoss.com/could-not-get-lock-error/)
+
 ## 폴더명 한글 -> 영문 변경
 * `export LANG=C`
 * `xdg-user-dirs-gtk-update`
