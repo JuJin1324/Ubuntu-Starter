@@ -67,7 +67,7 @@ Ubuntu에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 ### tomcat
 * 설치 : `apt-get install -y tomcat9`
 
-## snap
+## snap(Ubuntu 18.04 에서 선탑재됨)
 * 설명 : GUI 패키지 설치 관리자
 * 설치 : `sudo apt-get install -y snapd`
 
