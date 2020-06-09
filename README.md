@@ -126,8 +126,8 @@ Ubuntu에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 * 설치 : `snap install slack`
 
 ### 방화벽 설정
-방화벽 로그 경로 : /var/log/ufw.log  
-방화벽 설정 : sudo ufw enable  
-방화벽 로그 설정 : sudo ufw logging on  
-방화벽 정보 보기 : sudo ufw status  
-참조사이트 : [링크](https://webdir.tistory.com/206)
+* 방화벽 로그 경로 : /var/log/ufw.log  
+* 방화벽 설정 : sudo ufw enable  
+* 방화벽 로그 설정 : sudo ufw logging on  
+* 방화벽 정보 보기 : sudo ufw status  
+* 참조사이트 : [링크](https://webdir.tistory.com/206)
