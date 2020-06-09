@@ -33,6 +33,24 @@ Ubuntu에서 웹 개발에 필요한 환경 잡기 및 지식 정리
   - 설정 파일까지 삭제 : `sudo apt-get --purge remove [패키지 명]`
 * 설치된 패키지 목록보기 : `apt list`
 
+### ssh
+* 설명 : 쉘 접속기
+* 설치 : `sudo apt-get install -y ssh`
+* `mkdir ~/.ssh`
+
+### net-tools
+* 설명 : ifconfig
+* 설치 : `sudo apt-get install -y net-tools`
+
+### traceroute
+* 설명 : 서버 접속 가능 및 경로 파악
+* 설치 : `sudo apt-get install -y traceroute`
+* 사용법 : `traceroute -p [포트] [서버 IP] -T`
+
+### htop
+* 설명 : 기본 탑재된 top 보다 좀 더 Visual 한 버전의 프로세스 보기
+* 설치 : `apt-get install -y htop`
+
 ### Git
 * 설명 : 버전 관리
 * 설치 : `sudo apt-get install -y git`
@@ -62,19 +80,6 @@ Ubuntu에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 * 설명 : android platform tools
 * 설치 : `sudo apt-get install -y android-tools-adb android-tools-fastboot`
 * 참고 사이트 : [링크](https://linuxtechlab.com/install-adb-fastboot-ubuntu/)
-
-### htop
-* 설명 : 기본 탑재된 top 보다 좀 더 Visual 한 버전의 프로세스 보기
-* 설치 : `apt-get install -y htop`
-
-### net-tools
-* 설명 : ifconfig
-* 설치 : `apt-get install -y net-tools`
-
-### traceroute
-* 설명 : 서버 접속 가능 및 경로 파악
-* 설치 : `sudo apt-get install -y traceroute`
-* 사용법 : `traceroute -p [포트] [서버 IP] -T`
 
 ### tomcat
 * 설치 : `apt-get install -y tomcat9`
