@@ -48,7 +48,7 @@ Ubuntu에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
 ### htop
 * 설명 : 기본 탑재된 top 보다 좀 더 Visual 한 버전의 프로세스 보기
-* 설치 : `apt-get install -y htop`
+* 설치 : `sudo apt-get install -y htop`
 
 ### Git
 * 설명 : 버전 관리
