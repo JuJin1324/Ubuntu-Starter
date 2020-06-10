@@ -1,6 +1,9 @@
 # Ubuntu-Starter
 Ubuntu에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 
+## 추가 하드디스크 마운트
+* 참고 사이트 : [링크](https://psychoria.tistory.com/521)
+
 ## VMWare(가상머신)으로 Ubuntu 사용 시에 vmware-tools 설치하기
 * 설치 : `sudo apt-get install -y open-vm-tools-desktop`
 * 참고 사이트 : [링크](https://kkn1220.tistory.com/109)
