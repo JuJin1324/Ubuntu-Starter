@@ -76,7 +76,9 @@ Ubuntu에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 * OpenJDK 8 버전으로 설치 : `sudo apt-get install -y openjdk-8-jdk`
 
 ### Docker Desktop
-* 설치 : [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+설치 
+* [우분투 18.04 Docker & Docker-Compose 설치](https://velog.io/@kys6879/%EC%9A%B0%EB%B6%84%ED%88%AC-18.04-Docker-Docker-Compose-%EC%84%A4%EC%B9%98)
+* [Official - Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 
 ### ADB
 * 설명 : android platform tools
