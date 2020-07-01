@@ -136,3 +136,75 @@ Ubuntu에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 * 방화벽 로그 설정 : `sudo ufw logging on`  
 * 방화벽 정보 보기 : `sudo ufw status`  
 * 참조사이트 : [링크](https://webdir.tistory.com/206)
+
+## wifi 고정 아이피 설정
+### 연결 가능 wifi 확인
+설치(아래 확인 먼저 해보고 명령어가 없으면 설치)
+``` bash
+sudo apt-get install -y network-manager
+systemctl start NetworkManager
+```
+
+확인
+``` bash
+nmcli dev wifi
+```
+
+연결
+``` bash
+nmcli dev wifi connect wifi이름 password 'wifi패스워드'
+```
+
+### 네트워크 인터페이스 확인
+``` bash
+$ ifconfig
+...
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.32  netmask 255.255.255.255  broadcast 0.0.0.0
+        inet6 abcd::ef01:0203:0405:0607  prefixlen 64  scopeid 0x20<link>
+        ether ab:cd:ef:12:34:56  txqueuelen 1000  (Ethernet)
+        RX packets 76464341  bytes 5643758780 (5.6 GB)
+        RX errors 0  dropped 2556177  overruns 0  frame 0
+        TX packets 366823  bytes 64157759 (64.1 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
+
+### 고정 아이피 설정된 wifi 생성
+yaml 파일 수정
+``` bash
+cd /etc/netplan/
+sudo vi 01-network-manager-all.yaml
+# Let NetworkManager manage all devices on this system
+network:
+  version: 2
+  renderer: NetworkManager
+  wifis:
+          wlan0:        # ifconfig에서 확인한 네트워크 인터페이스
+                  dhcp4: yes
+                  dhcp6: no
+                  addresses:
+                        - 192.168.0.32/32       # 고정할 아이피
+                  gateway4: 192.168.0.1
+                  nameservers:
+                        addresses: [168.126.63.1, 168.126.63.2]
+                  access-points:
+                        "wifi이름":
+                                password: "wifi패스워드"
+:wq
+```
+
+네트워크 적용
+``` bash
+sudo netplan apply
+```
+
+### 생성된 wifi 연결
+``` bash
+# 확인
+nmcli dev wifi
+# 연결
+nmcli dev wifi connect netplan-wlan0-wifi이름 password '패스워드'
+```
+
+## 참고사이트
+* [[우분투 서버 18.04 NET] 1.2무선(wifi) IP 주소 설정](https://m.blog.naver.com/PostView.nhn?blogId=sunguru&logNo=221519708161&proxyReferer=https:%2F%2Fwww.google.com%2F)
