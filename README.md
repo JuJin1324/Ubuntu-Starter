@@ -48,6 +48,10 @@ Ubuntu에서 웹 개발에 필요한 환경 잡기 및 지식 정리
 * 설명 : ping
 * 설치: `sudo apt-get install -y iputils-ping`
 
+### telnet
+* 설명: telnet
+* 설치: `sudo apt-get install -y telnet`
+
 ### traceroute
 * 설명 : 서버 접속 가능 및 경로 파악
 * 설치 : `sudo apt-get install -y traceroute`
